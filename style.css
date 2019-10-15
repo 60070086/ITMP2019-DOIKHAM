@@ -74,11 +74,11 @@ body {
   background-color: #555;
   color: white;
 }*/
-
-/*.dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #edcfae;
+  border-radius: 25px;
   color: black;
-}*/
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
