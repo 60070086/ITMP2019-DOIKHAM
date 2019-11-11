@@ -2,73 +2,7 @@ body {
   background-color: white;
   margin:0;}
 
-.topnav {
-  border-bottom: solid;
-  border-bottom-width: 1.5px;
-  border-bottom-color: #7e5247;
-  padding-left: 10%;
-  /*padding-right: 25%;*/
-  overflow: hidden;
-  background-color: white;
-}
 
-.topnav a {
-  float: left;
-  color: #7e5247;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  font-size: 22px;
-  font-family: 'Sriracha', cursive;
-}
-
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 22px;    
-  border: none;
-  outline: none;
-  color: #7e5247;
-  padding: 20px 80px;
-  background-color: inherit;
-  font-family: 'Sriracha', cursive;
-  margin: 0;
-}
-
-.dropdown-content {
-  margin-left: 80px;
-  display: none;
-  position: absolute;
-  background-color: #eeac62;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 25px;
-  border-style: solid;
-  border-width: 4px;
-  border-left-color: #eeac62;
-  border-top-color: #eeac62;
-  border-right-color: #cd8e4b;
-  border-bottom-color: #cd8e4b;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  font-size: 16px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
 
 /*.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
@@ -84,18 +18,526 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+@media screen and (max-width: 425px) {
+  /*.topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+  }*/
+  .topnav {
+    width: 100%;
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    /*padding-left: 10%;*/
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: flex;
   }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    display: block;
+    text-align: center;
+    padding: 20px 20px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .logo1 a img{
+    display: block;
+    width: 130px;height: 60%;
+    padding: 4% 35% 0%;
+    opacity: 1;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .dropdown {
+    padding-left: 5px;
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 14px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 20px 10px 0px;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+  .dropdown-content {
+    /*margin-left: 80px;*/
+    font-family: 'Sriracha', cursive;
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a img {
+    width: 10px; height: 10px;
+  }
+  .home1 {
+    width: 100%;
+    height: 700px;
+    background-image: url(material/watermob2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .tomato-king {
+    width: 175px; height: 150px; 
+    background-image: url(material/ราชามะเขือ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 3%;
+    top: 25%;
+    display: block;
+  }
+  .logo-doikham {
+    width: 175px; height: 150px; 
+    display: inline-block;
+    background-image: url(material/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+  }
+  .product {
+    width: 220px; height: 200px; 
+    display: inline-block;
+    background-image: url(material/product.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 47%;
+    top: 55%;
+  }
+  .home2 {
+  width: 100%;
+  height: 700px;
+  background-image: url(material/home-bg2.png);
+  position: relative;
+  display: block;
+  }
+  .bts {
+  width: 80%; height: 400px; 
+  display: inline;
+  position: relative;
+  left: 5%;
+  /*top: 10%;*/
+  }
+  .txt-bts {
+    position: relative;
+    float: left;
+  }
+  .txt-bts h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 20pt;
+    color: #e86656;
+  }
+  .txt-bts h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 40pt;
+    color: #e86656;
+  }
+  .txt-bts p {
+    width: 380px;
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 10pt;
+    color: #7e5247;
+  }
+  .home2 .bts .pictomato img {
+    display: inline;
+    width: 380px;
+    height: 160px;
+    position: relative;
+    top: 20%;
+  }
+  .cloud {
+
+  }
+  .vision {
+    width: 80%; height: 300px; 
+    display: inline;
+    position: relative;
+    left: 5%;
+    bottom: 0%;
+  }
+  .vision h1 {
+    top: 20%;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 22pt;
+    color: #e86656;
+  }
+  .vision p {
+    width: 380px;
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 10pt;
+    color: #7e5247;
+  }
+  .home3 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: block;
+    background-image: url(material/home-bg3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .head3 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    display: block;
+  }
+  .head3 img {
+    width: 390px;
+    height: 280px;
+    position: relative;
+    display: block;
+  }
+  .head4 img {
+    width: 0px;
+    opacity: 0;
+  }
+  .object {
+    width: 100%;
+    height: 400;
+    display: block;
+  }
+  .objectM a img {
+    margin-left: 40px;
+    margin-right: 30px;
+    width: 30%;
+    height: 170;
+    display: inline-block;
+  }
+
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+@media screen  and (min-width: 426px) {
+    .topnav .mob {
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    padding-left: 7%;
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: block;
+  }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    padding: 20px 80px 0px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 130px; height: 60%
+    padding: 0px 0px 0px;
+    opacity: 1;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    padding: 0px 80px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  .topnav .logo1 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 22px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 20px 80px;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    margin-left: 80px;
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 160px;
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+  .dropdown-content a img {
+    width: 20px; height: 20px;
+  }
+  .home1 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(material/home-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .tomato-king {
+    width: 400px; height: 350px; 
+    background-image: url(material/ราชามะเขือ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 10%;
+    top: 20%;
+    display: block;
+
+  }
+
+
+  .logo-doikham {
+    width: 400px; height: 350px; 
+    display: inline-block;
+    background-image: url(material/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+
+  }
+  .product {
+    width: 470px; height: 420px; 
+    display: inline-block;
+    background-image: url(material/product.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+  }
+
+
+  .home2 {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: block;
+  }
+
+  .bts {
+    width: 80%; height: 500px; 
+    display: inline;
+    position: relative;
+    left: 5%;
+    /*top: 10%;*/
+  }
+  .txt-bts {
+    width: 40%; height: 300px;
+    position: relative;
+    float: left;
+  }
+  .txt-bts h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 40pt;
+    color: #e86656;
+  }
+  .txt-bts h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 60pt;
+    color: #e86656;
+  }
+  .txt-bts p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+  .pictomato {
+    display: inline;
+    width: 300px;
+    height: 90px;
+    position: relative;
+    top: 30%;
+  }
+  .cloud {
+    width: 130px;
+    height: 120px;
+    display: block;
+  }
+
+  .vision {
+    width: 50%; height: 300px; 
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 15%;
+  }
+  .vision h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 36pt;
+    color: #e86656;
+  }
+  .vision h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 28pt;
+    color: #e86656;
+  }
+  .vision p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+
+  .home3 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: block;
+    background-image: url(material/ภูเขา.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .head4 {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    display: block;
+  }
+  .head4 img {
+    width: 800px;
+    height: 240px;
+    position: relative;
+    display: block;
+  }
+  .head3 img {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+
+  }
+  .object {
+    width: 100%;
+    height: 400;
+    display: block;
+  }
+  .objectM a img {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 20%;
+    height: 170;
+    display: inline;
+  }
+}
+  /*.topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -113,84 +555,103 @@ body {
     width: 100%;
     text-align: left;
   }
-}
+  .topnav {
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    /*padding-left: 10%;
+    padding-right: 25%;*//*
+    overflow: hidden;
+    background-color: white;
+  }
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    display: inline;
+    text-align: center;
+    padding: 10px 20px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }*/
+  /*.topnav a {
+    float: left;
+    color: #7e5247;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    /*padding: 20px 60px;*//*
+    font-family: 'Sriracha', cursive;
+  }*//*
+  .topnav .logo1 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .logo2 a img{
+    display: inline;
+    width: 130px;height: 60%;
+    padding: 2% 3% 0%;
+    opacity: 1;
+  }
 
-.home1 {
-  width: 100%;
-  height: 1000px;
-  background-image: url(material/home-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 22px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 20px 80px;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+  .dropdown-content {
+    margin-left: 80px;
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a img {
+    width: 20px; height: 20px;
+  }
+}*/
 
 
-
-.tomato-king {
-  width: 400px; height: 350px; 
-  background-image: url(material/ราชามะเขือ.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  left: 10%;
-  top: 20%;
-  display: block;
-  animation-name: tomatoK;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes tomatoK {
-    0%   {left: 10%; top:20%;}
-    25%  {left: 10%; top:25%;}
-    50%  {left: 10%; top:15%;}
-    75%  {left: 10%; top:25%;}
-    100%  {left: 10%; top:20%;}
-}
-
-
-.logo-doikham {
-  width: 400px; height: 350px; 
-  display: inline-block;
-  background-image: url(material/logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  animation-name: logoDoi;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-}
-@keyframes logoDoi {
-    0%   {opacity: 0; width: 400px; height: 350px;}
-    35%  {width: 450px; height: 400px;}
-    70%  {width: 380px; height: 320px;}
-    100%  {opacity: 1; width: 400px; height: 350px;}
-}
-
-.product {
-  width: 470px; height: 420px; 
-  display: inline-block;
-  background-image: url(material/product.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 70%;
-  top: 60%;
-/*  animation-name: proD;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;*/
-}
-/*@keyframes proD {
-    0%   {opacity: 0;}
-    100%  {opacity: 1;}
-}
-*/
-
-.home2 {
+/*.home2 {
   width: 100%;
   height: 800px;
   position: relative;
@@ -202,7 +663,7 @@ body {
   display: inline;
   position: relative;
   left: 5%;
-  /*top: 10%;*/
+  /*top: 10%;*//*
 }
 .txt-bts {
   position: relative;
@@ -236,14 +697,11 @@ body {
   animation-duration: 2s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
-}
+}*/
 
-@keyframes tomatoG {
-    0%   {opacity: 0;}
-    100%  {opacity: 1;}
-}
 
-.vision {
+
+/*.vision {
   width: 50%; height: 300px; 
   display: block;
   position: relative;
@@ -262,8 +720,8 @@ body {
   font-size: 18pt;
   color: #7e5247;
 }
-
-.home3 {
+*/
+/*.home3 {
   width: 100%;
   height: 1000px;
   position: relative;
@@ -299,4 +757,5 @@ body {
   width: 20%;
   height: 170;
   display: inline;
-}
+}*/
+
