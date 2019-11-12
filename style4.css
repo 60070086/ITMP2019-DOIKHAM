@@ -1,0 +1,434 @@
+body {
+  background-color: white;
+  margin:0;}
+
+
+
+/*.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}*/
+.dropdown-content a:hover {
+  background-color: #edcfae;
+  border-radius: 25px;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 425px) {
+  /*.topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }*/
+  .topnav {
+    width: 100%;
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    /*padding-left: 10%;*/
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+  }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    display: block;
+    text-align: center;
+    padding: 20px 20px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .logo1 a img{
+    display: block;
+    width: 130px;height: 60%;
+    padding: 4% 35% 0%;
+    opacity: 1;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .dropdown {
+    padding-left: 5px;
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 14px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 20px 10px 0px;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+  .dropdown-content {
+    /*margin-left: 80px;*/
+    font-family: 'Sriracha', cursive;
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a img {
+    width: 10px; height: 10px;
+  }
+  .dk1 {
+    width: 100%;
+    height: 700px;
+    background-image: url(material/dk04-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .head-dk h1 {
+    margin: 0px;
+    color: #eac130;
+    font-size: 18pt;
+    font-family: 'Sriracha', cursive;
+    padding: 5% 0% 0% 5%;
+  }
+  .digital {
+    width: 90%;
+    height: 620px;
+    background-image: url(material/woodmob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 5%;
+    display: flex;
+  }
+  .headdigi {
+    width: 280px;
+    height: 90px;
+    display: flex;
+    background-image: url(material/digital.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 13%;
+    top: 15%;
+  }
+
+  .digital p {
+    width: 260px;
+    height: 350px;
+    display: flex;
+    top: 30%;
+    left: 15%;
+    position: absolute;
+    color: #7e5247;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 12pt;
+  }
+
+  .airplane {
+    width: 100%;
+    height: 80px;
+    display: block;
+  }
+.airplane img {
+    width: 150px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    left: 20%;
+  }
+
+
+  .dk2 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: block;
+    background-image: url(material/dk04-bg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .marketing h1 {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 24pt;
+    color: #e86656;
+  }
+  .marketing p {
+    width: 260px;
+    height: 400px;
+    margin: 0;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 12pt;
+    color: #7e5247;
+  }
+  .marketing a img {
+    width: 55px;
+    height: 60px;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+  }
+}
+
+@media screen  and (min-width: 426px) {
+    .topnav .mob {
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    padding-left: 7%;
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: block;
+  }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    padding: 20px 80px 0px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 130px; height: 60%
+    padding: 0px 0px 0px;
+    opacity: 1;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    padding: 0px 80px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  .topnav .logo1 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 22px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 20px 80px;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    margin-left: 80px;
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 160px;
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+  .dropdown-content a img {
+    width: 20px; height: 20px;
+  }
+  .dk1 {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+  }
+  .head-dk h1 {
+    margin: 0px;
+    color: #eac130;
+    font-size: 24pt;
+    font-family: 'Sriracha', cursive;
+    padding: 5% 0% 0% 5%;
+  }
+  .digital {
+    width: 60%;
+    height: 600px;
+    background-image: url(material/woodmob2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 5%;
+    display: flex;
+  }
+  .headdigi {
+    width: 500px;
+    height: 90px;
+    display: flex;
+    background-image: url(material/digital2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+  }
+
+  .digital p {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    top: 40%;
+    left: 15%;
+    position: absolute;
+    color: #7e5247;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 17pt;
+  }
+
+  .phone {
+    width: 40%;
+    height: 450px;
+    background-image: url(material/phonemob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    display: inline;
+  }
+
+  .airplane {
+    width: 100%;
+    height: 180px;
+    display: block;
+  }
+.airplane img {
+    width: 270px;
+    height: 180px;
+    display: block;
+    position: absolute;
+    left: 60%;
+  }
+
+
+  .dk2 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: block;
+    background-image: url(material/dk04-big.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .marketing h1 {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 38pt;
+    color: #e86656;
+  }
+  .marketing p {
+    width: 900px;
+    height: 400px;
+    margin: 0;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+  .marketing a img {
+    width: 55px;
+    height: 60px;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+  }
+}
