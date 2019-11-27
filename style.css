@@ -43,7 +43,7 @@ body {
     color: #7e5247;
     display: block;
     text-align: center;
-    padding: 20px 20px 0px;
+    padding: 4.5% 2% 0%;
     text-decoration: none;
     font-size: 14px;
     font-family: 'Sriracha', cursive;
@@ -83,13 +83,14 @@ body {
     padding-left: 5px;
     float: left;
     overflow: hidden;
+    padding: 4.5% 7% 0%;
   }
   .dropdown .dropbtn {
     font-size: 14px;    
     border: none;
     outline: none;
     color: #7e5247;
-    padding: 20px 10px 0px;
+    padding: 0% 0% 0%;
     background-color: inherit;
     font-family: 'Sriracha', cursive;
     margin: 0;
@@ -201,8 +202,8 @@ body {
   }
   .home2 .bts .pictomato img {
     display: inline;
-    width: 380px;
-    height: 160px;
+    width: 80%;
+    /* height: 160px; */
     position: relative;
     top: 20%;
   }
@@ -250,9 +251,10 @@ body {
     display: block;
   }
   .head3 img {
-    width: 390px;
-    height: 280px;
+    width: 80%;
+    /* height: 280px; */
     position: relative;
+    left: 10%;
     display: block;
   }
   .head4 img {
@@ -273,13 +275,13 @@ body {
   }
 
 }
-
-@media screen  and (min-width: 426px) {
+@media screen and (min-width: 426px) and (max-width: 1068px) {
     .topnav .mob {
     border-bottom: solid;
     border-bottom-width: 1.5px;
     border-bottom-color: #7e5247;
     padding-left: 7%;
+
     /*padding-right: 25%;*/
     overflow: hidden;
     background-color: white;
@@ -289,7 +291,7 @@ body {
   .topnav .mob .nameText a {
     float: left;
     color: #7e5247;
-    padding: 20px 80px 0px;
+    padding: 2% 1% 0%;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -304,7 +306,7 @@ body {
   .topnav .mob .nameText2 a {
     float: left;
     color: #7e5247;
-    padding: 0px 80px 20px;
+    padding: 0% 1% 0%;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -326,6 +328,7 @@ body {
   .dropdown {
     float: left;
     overflow: hidden;
+    padding: 2% 1% 0%;
   }
 
   .dropdown .dropbtn {
@@ -333,14 +336,545 @@ body {
     border: none;
     outline: none;
     color: #7e5247;
-    padding: 20px 80px;
+    padding: 0% 0% 0%;
     background-color: inherit;
     font-family: 'Sriracha', cursive;
     margin: 0;
   }
 
   .dropdown-content {
-    margin-left: 80px;
+    /*margin-left: 80px;*/
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 160px;
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+  .dropdown-content a img {
+    width: 20px; height: 20px;
+  }
+  .home1 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(material/home-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .tomato-king {
+    width: 400px; height: 350px; 
+    background-image: url(material/ราชามะเขือ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 10%;
+    top: 20%;
+    display: block;
+
+  }
+
+
+  .logo-doikham {
+    width: 400px; height: 350px; 
+    display: inline-block;
+    background-image: url(material/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+
+  }
+  .product {
+    width: 470px; height: 420px; 
+    display: inline-block;
+    background-image: url(material/product.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+  }
+
+
+  .home2 {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: block;
+  }
+
+  .bts {
+    width: 80%; height: 500px; 
+    display: inline;
+    position: relative;
+    left: 5%;
+    /*top: 10%;*/
+  }
+  .txt-bts {
+    width: 40%; height: 300px;
+    position: relative;
+    float: left;
+  }
+  .txt-bts h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 40pt;
+    color: #e86656;
+  }
+  .txt-bts h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 60pt;
+    color: #e86656;
+  }
+  .txt-bts p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+  .pictomato {
+    display: inline;
+    width: 300px;
+    height: 90px;
+    position: relative;
+    top: 30%;
+  }
+  .cloud {
+    width: 130px;
+    height: 120px;
+    display: block;
+  }
+
+  .vision {
+    width: 50%; height: 300px; 
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 15%;
+  }
+  .vision h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 36pt;
+    color: #e86656;
+  }
+  .vision h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 28pt;
+    color: #e86656;
+  }
+  .vision p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+
+  .home3 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: block;
+    background-image: url(material/ภูเขา.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .head4 {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    display: block;
+  }
+  .head4 img {
+    width: 800px;
+    height: 240px;
+    position: relative;
+    display: block;
+  }
+  .head3 img {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+
+  }
+  .object {
+    width: 100%;
+    height: 400;
+    display: block;
+  }
+  .objectM a img {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 20%;
+    height: 170;
+    display: inline;
+  }
+}
+@media screen and (min-width: 1068px) and (max-width: 1475px) {
+    .topnav .mob {
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    padding-left: 7%;
+
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: block;
+  }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    padding: 1.5% 4% 0%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 130px; height: 60%
+    padding: 0px 0px 0px;
+    opacity: 1;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    padding: 0% 4% 0%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  .topnav .logo1 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 1.5% 5% 0%;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 22px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 0% 0% 0%;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    /*margin-left: 80px;*/
+    display: none;
+    position: absolute;
+    background-color: #eeac62;
+    min-width: 160px;
+    font-family: 'Sriracha', cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #eeac62;
+    border-top-color: #eeac62;
+    border-right-color: #cd8e4b;
+    border-bottom-color: #cd8e4b;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+  .dropdown-content a img {
+    width: 20px; height: 20px;
+  }
+  .home1 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(material/home-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .tomato-king {
+    width: 400px; height: 350px; 
+    background-image: url(material/ราชามะเขือ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 10%;
+    top: 20%;
+    display: block;
+
+  }
+
+
+  .logo-doikham {
+    width: 400px; height: 350px; 
+    display: inline-block;
+    background-image: url(material/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+
+  }
+  .product {
+    width: 470px; height: 420px; 
+    display: inline-block;
+    background-image: url(material/product.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+  }
+
+
+  .home2 {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: block;
+  }
+
+  .bts {
+    width: 80%; height: 500px; 
+    display: inline;
+    position: relative;
+    left: 5%;
+    /*top: 10%;*/
+  }
+  .txt-bts {
+    width: 40%; height: 300px;
+    position: relative;
+    float: left;
+  }
+  .txt-bts h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 40pt;
+    color: #e86656;
+  }
+  .txt-bts h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 60pt;
+    color: #e86656;
+  }
+  .txt-bts p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+  .pictomato {
+    display: inline;
+    width: 300px;
+    height: 90px;
+    position: relative;
+    top: 30%;
+  }
+  .cloud {
+    width: 130px;
+    height: 120px;
+    display: block;
+  }
+
+  .vision {
+    width: 50%; height: 300px; 
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 15%;
+  }
+  .vision h1 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 36pt;
+    color: #e86656;
+  }
+  .vision h2 {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    font-size: 28pt;
+    color: #e86656;
+  }
+  .vision p {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
+    color: #7e5247;
+  }
+
+  .home3 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: block;
+    background-image: url(material/ภูเขา.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .head4 {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    display: block;
+  }
+  .head4 img {
+    width: 800px;
+    height: 240px;
+    position: relative;
+    display: block;
+  }
+  .head3 img {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+
+  }
+  .object {
+    width: 100%;
+    height: 400;
+    display: block;
+  }
+  .objectM a img {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 20%;
+    height: 170;
+    display: inline;
+  }
+}
+
+@media screen  and (min-width: 1475px) {
+    .topnav .mob {
+    border-bottom: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #7e5247;
+    padding-left: 7%;
+
+    /*padding-right: 25%;*/
+    overflow: hidden;
+    background-color: white;
+    display: block;
+  }
+
+  .topnav .mob .nameText a {
+    float: left;
+    color: #7e5247;
+    padding: 1.5% 6% 0%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+  .topnav .mob .nameText2 a img{
+    width: 130px; height: 60%
+    padding: 0px 0px 0px;
+    opacity: 1;
+  }
+  .topnav .mob .nameText2 a {
+    float: left;
+    color: #7e5247;
+    padding: 0% 6% 0%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  .topnav .logo1 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+  .topnav .mob .logo2 a img{
+    width: 0px;
+    padding: 0px 0px 0px;
+    opacity: 0;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 1.5% 5% 0%;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 22px;    
+    border: none;
+    outline: none;
+    color: #7e5247;
+    padding: 0% 0% 0%;
+    background-color: inherit;
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    /*margin-left: 80px;*/
     display: none;
     position: absolute;
     background-color: #eeac62;
